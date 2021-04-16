@@ -1,3 +1,7 @@
+body{
+    background-color: yellow;
+    opacity: 1;
+}
 p{
     background-color: brown;
     text-align: center;
