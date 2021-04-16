@@ -1,3 +1,3 @@
 # HTML5-CSS3
 testando a hospedagem do site.
- hhttps://ryanzinho653.github.io/HTML5-CSS3/
+https://ryanzinho653.github.io/HTML5-CSS3/html_css/index.html
