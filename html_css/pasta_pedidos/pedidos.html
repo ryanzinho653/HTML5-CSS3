@@ -6,68 +6,156 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>teste pedidos</title>
 </head>
-    <body>
-        <form oninput="total.value = (noites.valueAsNumber * 99) + 
- ((acompanhantes.valueAsNumber - 1) * 10)">
-            <h3>Por favor preencha o campo abaixo</h3>
-            </label>Por favor informe o nome completo:</label>
-            <input type="text" id="nome_completo" required>
-            <br>
-            <label>por favor informe o Endereço de Email:</label>
-            <input type="email" id="email" name="email" required>
-            <br>
-            <label>Informe novamente o Endereço de Email:</label>
-            <input type="email" id="email_conf" name="email_conf" required>
-            <h3>Cardapio</h3>
-            <label><h4>Lanche W</h4></label>
-            <input type="radio" id="lancheW" name="lancheW" value="sim" /> <label for="lancheW">SIM</label>
-            <input type="radio" id="lancheW" name="lancheW" value="sim" /> <label for="lancheW">NÃO</label>
-            <br>
-            <br>
-            <label>Por favor informe quantos lanches deseja comprar(cada lanche custará R$10.00):</label>
-            <input type="number" id="lancheW" name="lancheW" value="0" min="0" max="10">
-            <br>
-            <label><h4>Lanche X</h4></label>
-            <input type="radio" id="lancheX" name="lancheX" value="sim" /> <label for="lancheX">SIM</label>
-            <input type="radio" id="lancheX" name="lancheX" value="sim" /> <label for="lancheX">NÃO</label>
-            <br>
-            <br>
-            <label>Por favor informe quantos lanches deseja comprar (cada lanche custará R$10.00):</label>
-            <input type="number" id="lancheX" name="lancheX" value="0" min="0" max="10">
-            <br>
-            <label><h4>Lanche Y</h4></label>
-            <input type="radio" id="lancheY" name="lancheY" value="sim" /> <label for="lancheY">SIM</label>
-            <input type="radio" id="lancheY" name="lancheY" value="sim" /> <label for="lancheY">NÃO</label>
-            <br>
-            <br>
-            <label>Por favor informe quantos lanches deseja comprar (cada lanche custará R$10.00):</label>
-            <input type="number" id="lancheY" name="lancheY" value="0" min="0" max="10">
-            <br>
-            <label><h4>Lanche Z</h4></label>
-            <input type="radio" id="lancheZ" name="lanchez" value="sim" /> <label for="lancheZ">SIM</label>
-            <input type="radio"     id="lancheZ" name="lancheZ" value="sim" /> <label for="lancheZ">NÃO</label>
-            <br>
-            <br>
-            <label>Por favor informe quantos lanches deseja comprar (cada lanche custará R$10.00):</label>
-            <input type="number" id="lancheZ" name="lancheZ" value="0" min="0" max="10">
-            <br>
-            <label><h4>Gostaria de um refrigerante ?</h4></label>
-            <input type="radio" id="refrigerante" name="refrigerante" value="sim"/> <label for="refrigerante">SIM</label>
-            <input type="radio" id="refrigerante" name="refrigerante" value="sim"/> <label for="refrigerante">NÃO</label>
-            <br>
-            <br>
-            <label>Por favor informe quantos refrigerantes deseja comprar (cada refrigerante custará R$10.00):</label>
-            <input type="number" id="refrigerante" name="refrigerante" value="0" min="0" max="10">
-            <br>
-            <label><h4>Informe o tamanho</h4></label>
-            <br>
-            <input type="radio" id="refrigerante" name="refrigerante" value="sim"/> <label for="refrigerante">2Litro</label>
-            <input type="radio" id="refrigerante" name="refrigerante" value="sim"/> <label for="refrigerante">1Litro</label>
-            <input type="radio" id="refrigerante" name="refrigerante" value="sim"/> <label for="refrigerante"></label>
-            <input type="radio" id="refrigerante" name="refrigerante" value="sim"/> <label for="refrigerante">500mL</label>
-            <input type="radio" id="refrigerante" name="refrigerante" value="sim"/> <label for="refrigerante">Lata</label>
-            <br>
-            <label>Valor final da compra:</label>
-        </form>    
-    </body>
+<body>
+      <div>
+        <h1>cadastro da compra</h1>
+        <p>complete as informações abaixo</p>
+      </div> 
+    <form>
+        <fieldset>
+            <div>
+                <label>Nome</label>
+                <input type="text" name="nome" id="nome">
+            </div>
+            
+            <div>
+                <label>Sobrenome</label>
+                <input type="text" name="sobrenome" id="sobrenome">
+            </div>
+            
+            <div>
+                <label>Email</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            
+            <div>
+                <label>Cardapio</label>
+                <div>
+                    <label>lancheX</label>
+                    <label>
+                        <input type="radio" name="lancheX" value="Sim">Sim
+                    </label>
+                    <label>
+                        <input type="radio" name="lancheX" value="Sim">Não
+                    </label>
+                </div>
+                <div>
+                    <label>lancheY</label>
+                    <label>
+                        <input type="radio" name="lancheY" value="Sim">Sim
+                    </label>
+                    <label>
+                        <input type="radio" name="lancheY" value="Sim">Não
+                    </label>
+                </div>
+                <div>
+                    <label>lancheZ</label>
+                    <label>
+                        <input type="radio" name="lancheZ" value="Sim">Sim
+                    </label>
+                    <label>
+                        <input type="radio" name="lancheZ" value="Sim">Não
+                    </label>
+                </div>
+            </div>
+        </fieldset><br>  
+        <fieldset>
+            <div>
+                <label>Gostaria de tomar alguma coisa?</label>
+                <label>
+                    <input type="radio" name="refrigerante_escolha" value="Sim">Sim
+                </label>
+                <label>
+                    <input type="radio" name="refrigerante_escolha" value="Sim">Não
+                </label>
+            </div>
+            <div>
+                <label>Se sim então:</label>
+                <select id="tipo">
+                    <option selected disabled value="">Selecione</option>
+                    <option>Refrigerante</option>
+                    <option>Suco</option>
+                </select>
+            </div>
+            <div>
+                <label>Se a escolha foi refrigerante escolha:</label>
+        
+                <label>Selecione a marca</label><br>
+                <div>
+                    <input type="checkbox" id="Fanta" value="Fanta">
+                    <label for="Fanta">Fanta</label><br>
+                    <label>Informe a quantidade:</label>
+                    <input type="number" id="quantidade1" name="quantidade1" value="0" min="0" max="10">
+                </div>
+                <div>
+                    <input type="checkbox" id="Coca-Cola" value="Coca-Cola">
+                    <label for="Coca-Cola">Coca-Cola</label><br>
+                    <label>Informe a quantidade:</label>
+                    <input type="number" id="quantidade2" name="quantidade2" value="0" min="0" max="10">
+                </div>
+                <div>
+                    <input type="checkbox" id="Dolly" value="Dolly">
+                    <label for="Dolly">Dolly</label><br>
+                    <label>Informe a quantidade:</label>
+                    <input type="number" id="quantidade3" name="quantidade3" value="0" min="0"  max="10">
+                </div>
+                <div>
+                    <input type="checkbox" id="Pepsi" value="Pepsi">
+                    <label for="Pepsi">Pepsi</label><br>
+                    <label>Informe a quantidade:</label>
+                    <input type="number" id="quantidade4" name="quantidade4" value="0" min="0" max="10">
+                </div>
+
+            </div>
+            <div>
+                <label>Selecione o tamanho do refrigerante</label><br>
+                <input type="checkbox" id="Lata" value="Lata">
+                <label for="Lata">Lata</label>
+                <input type="checkbox" id="500mL" value="500mL">
+                <label for="500mL">500mL</label>
+                <input type="checkbox" id="1Litro" value="1Litro">
+                <label for="1Litro">1Litro</label>
+                <input type="checkbox" id="2Litro" value="2Litro">
+                <label for="2Litro">2Litro</label>
+            </div>
+            <div>
+                <label>Se a escolha foi refrigerante escolha:</label>
+                <div>
+                    <label>Selecione o sabor</label><br>
+                    <input type="checkbox" id="Abacaxi" value="Abacaxi">
+                    <label for="Abacaxi">Abacaxi</label><br>
+                    <label>Informe a quantidade:</label>
+                    <input type="number" id="quantidade4" name="quantidade4" value="0" min="0" max="10">
+                </div>
+                <div>
+                    <input type="checkbox" id="Melancia" value="Melancia">
+                    <label for="Melancia">Melancia</label><br>
+                    <label>Informe a quantidade:</label>
+                    <input type="number" id="quantidade5" name="quantidade5" value="0" min="0" max="10">
+                </div>
+                <div>
+                    <input type="checkbox" id="Uva" value="Uva">
+                    <label for="Uva">Uva</label><br>
+                    <label>Informe a quantidade:</label>
+                    <input type="number" id="quantidade6" name="quantidade6" value="0" min="0" max="10">
+                </div>
+                <div>
+                    <input type="checkbox" id="Laranja" value="Laranja">
+                    <label for="Laranja">Laranja</label><br>
+                    <label>Informe a quantidade:</label>            
+                    <input type="number" id="quantidade7" name="quantidade7" value="0" min="0" max="10">
+                </div>
+            </div>
+            <div>
+                <label>Selecione o tamanho do Suco</label><br>
+                <input type="checkbox" id="250mL" value="250mL">
+                <label for="250mL">250mL</label>
+                <input type="checkbox" id="500mL" value="500mL">
+                <label for="500mL">500mL</label>
+                <input type="checkbox" id="1Litro" value="1Litro">
+                <label for="1Litro">1Litro</label>
+            </div>
+        </fieldset> 
+    </form>      
+</body>
 </html>
