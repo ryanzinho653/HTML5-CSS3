@@ -6,30 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>teste pedidos</title>
 </head>
-<body>
-    <label>Por favor informe o nome completo:</label>
-    <input type="text" id="nome_completo" required>
-    <br>
-    <label>por favor informe o Endereço de Email:</label>
-    <input type="email" id="email" name="email" required>
-    <br>
-    <label>Informe novamente o Endereço de Email:</label>
-    <input type="email" id="email_conf" name="email_conf" required>
-    <h3>Cardapio</h3>
-    <label>Lanche W</label>
-    <input type="radio" id="lanche" name="lanche" value="sim" /> <label for="lanche">SIM</label>
-    <input type="radio" id="lanche" name="lanche" value="sim" /> <label for="lanche">NÃO</label>
-    <br>
-    <label>Lanche X</label>
-    <br>
-    <label>Lanche Y</label>
-    <br>
-    <label>Lanche Z</label>
-    <br>
-    <label>refrigerante</label>
-    <br>
-    <label>tamanho</label>
-    <br>
-
-</body>
+    <body>
+        <form oninput="total.value = (noites.valueAsNumber * 99) + 
+ ((acompanhantes.valueAsNumber - 1) * 10)">
+            <h3>Por favor preencha o campo abaixo</h3>
+            </label>Por favor informe o nome completo:</label>
+            <input type="text" id="nome_completo" required>
+            <br>
+            <label>por favor informe o Endereço de Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label>Informe novamente o Endereço de Email:</label>
+            <input type="email" id="email_conf" name="email_conf" required>
+            <h3>Cardapio</h3>
+            <label><h4>Lanche W</h4></label>
+            <input type="radio" id="lancheW" name="lancheW" value="sim" /> <label for="lancheW">SIM</label>
+            <input type="radio" id="lancheW" name="lancheW" value="sim" /> <label for="lancheW">NÃO</label>
+            <br>
+            <br>
+            <label>Por favor informe quantos lanches deseja comprar(cada lanche custará R$10.00):</label>
+            <input type="number" id="lancheW" name="lancheW" value="0" min="0" max="10">
+            <br>
+            <label><h4>Lanche X</h4></label>
+            <input type="radio" id="lancheX" name="lancheX" value="sim" /> <label for="lancheX">SIM</label>
+            <input type="radio" id="lancheX" name="lancheX" value="sim" /> <label for="lancheX">NÃO</label>
+            <br>
+            <br>
+            <label>Por favor informe quantos lanches deseja comprar (cada lanche custará R$10.00):</label>
+            <input type="number" id="lancheX" name="lancheX" value="0" min="0" max="10">
+            <br>
+            <label><h4>Lanche Y</h4></label>
+            <input type="radio" id="lancheY" name="lancheY" value="sim" /> <label for="lancheY">SIM</label>
+            <input type="radio" id="lancheY" name="lancheY" value="sim" /> <label for="lancheY">NÃO</label>
+            <br>
+            <br>
+            <label>Por favor informe quantos lanches deseja comprar (cada lanche custará R$10.00):</label>
+            <input type="number" id="lancheY" name="lancheY" value="0" min="0" max="10">
+            <br>
+            <label><h4>Lanche Z</h4></label>
+            <input type="radio" id="lancheZ" name="lanchez" value="sim" /> <label for="lancheZ">SIM</label>
+            <input type="radio"     id="lancheZ" name="lancheZ" value="sim" /> <label for="lancheZ">NÃO</label>
+            <br>
+            <br>
+            <label>Por favor informe quantos lanches deseja comprar (cada lanche custará R$10.00):</label>
+            <input type="number" id="lancheZ" name="lancheZ" value="0" min="0" max="10">
+            <br>
+            <label><h4>Gostaria de um refrigerante ?</h4></label>
+            <input type="radio" id="refrigerante" name="refrigerante" value="sim"/> <label for="refrigerante">SIM</label>
+            <input type="radio" id="refrigerante" name="refrigerante" value="sim"/> <label for="refrigerante">NÃO</label>
+            <br>
+            <br>
+            <label>Por favor informe quantos refrigerantes deseja comprar (cada refrigerante custará R$10.00):</label>
+            <input type="number" id="refrigerante" name="refrigerante" value="0" min="0" max="10">
+            <br>
+            <label><h4>Informe o tamanho</h4></label>
+            <br>
+            <input type="radio" id="refrigerante" name="refrigerante" value="sim"/> <label for="refrigerante">2Litro</label>
+            <input type="radio" id="refrigerante" name="refrigerante" value="sim"/> <label for="refrigerante">1Litro</label>
+            <input type="radio" id="refrigerante" name="refrigerante" value="sim"/> <label for="refrigerante"></label>
+            <input type="radio" id="refrigerante" name="refrigerante" value="sim"/> <label for="refrigerante">500mL</label>
+            <input type="radio" id="refrigerante" name="refrigerante" value="sim"/> <label for="refrigerante">Lata</label>
+            <br>
+            <label>Valor final da compra:</label>
+        </form>    
+    </body>
 </html>
