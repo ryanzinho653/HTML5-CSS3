@@ -1,3 +1,10 @@
-#imagem_amburguer {
-    
+* {
+    margin: 0;
+    padding: 0;
+}
+#tituloH1{
+    font-family: sans-serif;
+    color: brown;
+    text-align: center;
+    font-size: 100px;
 }
