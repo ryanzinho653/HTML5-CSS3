@@ -1,10 +1,11 @@
 * {
     margin: 0;
     padding: 0;
+    background-color: silver;
 }
 #tituloH1{
     font-family: sans-serif;
     color: brown;
     text-align: center;
-    font-size: ;
+    font-size: 30px;
 }
