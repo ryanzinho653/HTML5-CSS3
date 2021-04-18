@@ -17,10 +17,22 @@
     margin-top: 0.8cm;
     font-size: 30px;
 }
-.grupo1{
+fieldset{
     border: 0;
 }
 #paragrafo1{
     background-color: white;
-    margin: 10px 10px 10px;
+    margin: -400px 50px 400px 825px;
+    border: 1px solid black ;
+}
+#tituloH3-2{
+    background-color: crimson;
+    font-family: sans-serif;
+    color: rgb(44, 71, 17);
+    font-size: 30px;
+    text-align: center;
+    margin-top: 0.5cm;
+}
+#paragrafo2{
+   margin: 20px 600px 10px 50px;
 }
