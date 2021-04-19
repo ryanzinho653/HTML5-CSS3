@@ -35,7 +35,7 @@ main{
     font-size: 20px;
     text-transform: uppercase;
 }
-#titulo{
+#titulo h1{
     text-align: center;
-    font-family:Arial Black", "Arial Bold";
+    font-family:"Arial Black", "Arial Bold";
 }
