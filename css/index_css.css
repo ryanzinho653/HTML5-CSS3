@@ -23,7 +23,32 @@ main{
     float: left;
     list-style: none;
 }
-.redes_sociais{
+.redes_sociais {
     width: 20%;
     float: right;
+} 
+.header-2{
+    background-color: white;
+    width: 100%;
+}
+.menu ul li {
+    display: inline-block;
+    color: silver;
+    margin-right: 20px;
+}
+.menu ul li:hover {
+    border-bottom: 2px solid brown;
+}
+.menu ul li a:hover{
+    color: brown;
+}
+.menu ul li a {
+    color: silver;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.imagem{
+    background-color: black;
+    text-align: center;
 }
