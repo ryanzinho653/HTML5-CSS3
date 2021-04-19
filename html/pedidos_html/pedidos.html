@@ -49,52 +49,52 @@
             </div>
         </fieldset>
         <fieldset>
-            <div>
-                <label>Deseja fazer o pedido:</label>
-                <input type="radio" id="sim" name="sim" value="sim">
-                <label for="sim">Sim</label>
-                <input type="radio" id="nao" name="nao" value="sim">
-                <label for="nao">Não</label><br><br>
+            <div oninput="total1.value=(quantidade2.valueAsNumber * 27)+(quantidade1.valueAsNumber * 40)+(quantidade3.valueAsNumber * 30)"> 
                 <div>
-                    <label>Clubhouse Picanha</label>
-                    <label>cada unidade equivale a R$40.00</label><br>
-                    <img src="../../imag/PicanhaClubhouse2carnes.png" alt="clubhouse"><br>
+                    <label>Deseja fazer o pedido:</label>
+                    <input type="radio" id="sim" name="sim" value="sim">
+                    <label for="sim">Sim</label>
+                    <input type="radio" id="nao" name="nao" value="sim">
+                    <label for="nao">Não</label><br><br>
+                    <div>
+                        <label>Clubhouse Picanha</label><br><br>
+                        <label>cada unidade equivale a R$40.00</label><br>
+                        <img src="../../imag/PicanhaClubhouse2carnes.png" alt="clubhouse"><br>
+                        <label>deseja comprar esse?</label>
+                        <input type="radio" id="sim" name="sim" value="sim">
+                        <label for="sim">Sim</label>
+                        <input type="radio" id="nao" name="nao" value="sim">
+                        <label for="nao">Não</label><br>
+                        <label>Informe a quantidade que deseja:</label>
+                        <input type="number" id="quantidade1" name="quantidad1" value="0" min="0" max="10">
+                    </div>
+                </div><br><br>
+                <div>
+                    <label>Big Mac</label><br><br>
+                    <label>Cada unidade equivale a R$27.00</label><br>
+                    <img src="../../imag/bigmac_v2.png" alt="bigmac"><br>
                     <label>deseja comprar esse?</label>
                     <input type="radio" id="sim" name="sim" value="sim">
                     <label for="sim">Sim</label>
                     <input type="radio" id="nao" name="nao" value="sim">
                     <label for="nao">Não</label><br>
                     <label>Informe a quantidade que deseja:</label>
-                    <input type="number" id="quantidade-1" name="quantidade-1" value="0" min="0" max="10">
-                </div>
-            </div>
-        </fieldset>
-        <fieldset>    
-            <div>
-                <label>Big Mac</label>
-                <label>Cada unidade equivale a R$27.00</label><br>
-                <img src="../../imag/bigmac_v2.png" alt="bigmac"><br>
-                <label>deseja comprar esse?</label>
-                <input type="radio" id="sim" name="sim" value="sim">
-                <label for="sim">Sim</label>
-                <input type="radio" id="nao" name="nao" value="sim">
-                <label for="nao">Não</label><br>
-                <label>Informe a quantidade que deseja:</label>
-                <input type="number" id="quantidade-2" name="quantidade-2" value="0" min="0" max="10">
-            </div>
-        </fieldset>
-        <fieldset>
-            <div>
-                <label>Quarterão de Queijo</label>
-                <label>Cada unidade equivale a R$30.00</label><br>
-                <img src="../../imag/quarteirao.png" alt="quarteirao"><br>
-                <label>deseja comprar esse?</label>
-                <input type="radio" id="sim" name="sim" value="sim">
-                <label for="sim">Sim</label>
-                <input type="radio" id="nao" name="nao" value="sim">
-                <label for="nao">Não</label><br>
-                <label>Informe a quantidade que deseja:</label>
-                <input type="number" id="quantidade-3" name="quantidade-3" value="0" min="0" max="10">
+                    <input type="number" id="quantidade2" name="quantidade2" value="0" min="0" max="10">
+                </div><br><br>
+                <div>
+                    <label>Quarterão de Queijo</label><br><br>
+                    <label>Cada unidade equivale a R$30.00</label><br>
+                    <img src="../../imag/quarteirao.png" alt="quarteirao"><br>
+                    <label>deseja comprar esse?</label>
+                    <input type="radio" id="sim" name="sim" value="sim">
+                    <label for="sim">Sim</label>
+                    <input type="radio" id="nao" name="nao" value="sim">
+                    <label for="nao">Não</label><br>
+                    <label>Informe a quantidade que deseja:</label>
+                    <input type="number" id="quantidade3" name="quantidade3" value="0" min="0" max="10">
+                </div><br>
+                <label>total a pagar no(s) lanches: R$</label>
+                <output id="total1" name="total1">0</output>.00
             </div>
         </fieldset>
         <fieldset>
@@ -174,8 +174,7 @@
                     <label for="nao">Não</label><br>
                     <label>Informe a quantidade que deseja:</label>
                     <input type="number" id="quantidade-8" name="quantidade-8" value="0" min="0" max="5">
-                </div>
-            
+                </div>                    
             </div>
         </fieldset>
     </form>
