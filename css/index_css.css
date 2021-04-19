@@ -52,3 +52,6 @@ main{
     background-color: black;
     text-align: center;
 }
+.paragrafo p{
+    margin: 2% 10% 2% 10%;
+}

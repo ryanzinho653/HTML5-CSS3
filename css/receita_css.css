@@ -35,7 +35,13 @@ main{
     font-size: 20px;
     text-transform: uppercase;
 }
-#titulo h1{
+.inicio{
+    margin: 0% 10% 10% 10%;
+}
+.inicio h1{
     text-align: center;
-    font-family:"Arial Black", "Arial Bold";
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.inicio a p{
+    color: black;
 }

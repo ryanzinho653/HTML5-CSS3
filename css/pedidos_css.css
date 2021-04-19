@@ -35,4 +35,14 @@ main{
     font-size: 20px;
     text-transform: uppercase;
 }
-
+.segundo-menu{
+    margin: 0% 10% 10% 10%;
+}
+#titulo{
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#paragrafo{
+    text-align: center;
+    text-transform: uppercase;
+}
